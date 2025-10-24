@@ -1,0 +1,269 @@
+/* Hero Section */
+.hero {
+  width: 100%;
+  padding: 3rem 0;
+  background: linear-gradient(to bottom, var(--color-background), var(--color-muted));
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding: 6rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    padding: 8rem 0;
+  }
+}
+
+.hero-container {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .hero-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.hero-title {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.025em;
+}
+
+@media (min-width: 640px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero-title {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+
+.hero-description {
+  max-width: 600px;
+  color: var(--color-muted-foreground);
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hero-description {
+    font-size: 1.25rem;
+  }
+}
+
+.hero-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+@media (min-width: 400px) {
+  .hero-actions {
+    flex-direction: row;
+  }
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1024px) {
+  .hero-image {
+    justify-content: flex-end;
+  }
+}
+
+.hero-image-container {
+  position: relative;
+  height: 350px;
+  width: 350px;
+}
+
+@media (min-width: 768px) {
+  .hero-image-container {
+    height: 450px;
+    width: 450px;
+  }
+}
+
+.hero-image-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to bottom right, rgba(26, 93, 58, 0.2), rgba(212, 175, 55, 0.2));
+  border-radius: 50%;
+  filter: blur(3rem);
+}
+
+
+.hero-image-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-icon {
+  width: 8rem;
+  height: 8rem;
+  color: var(--color-secondary);
+}
+
+/* Features Section */
+.features {
+  width: 100%;
+  padding: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .features {
+    padding: 6rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .features {
+    padding: 8rem 0;
+  }
+}
+
+.features-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.features-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .features-title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .features-title {
+    font-size: 3rem;
+  }
+}
+
+.features-description {
+  max-width: 900px;
+  color: var(--color-muted-foreground);
+}
+
+@media (min-width: 768px) {
+  .features-description {
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.feature-card-icon {
+  color: var(--color-secondary);
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Stats Section */
+.stats {
+  width: 100%;
+  padding: 3rem 0;
+  background-color: var(--color-muted);
+}
+
+@media (min-width: 768px) {
+  .stats {
+    padding: 6rem 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  .stats {
+    padding: 8rem 0;
+  }
+}
+
+.stats-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1024px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.stat-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-muted-foreground);
+}
+
